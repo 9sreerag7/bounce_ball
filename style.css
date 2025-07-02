@@ -1,0 +1,36 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.game-container {
+  position: relative;          /* KEY: allows overlay to position relative to this */
+  width: 100vw;
+  height: 100vh;
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: black;
+}
+
+/* Overlay will float over canvas */
+.overlay {
+  position: absolute;          /* KEY: positions inside game-container */
+  top: 20px;
+  right: 20px;
+  color: white;
+  font-family: monospace;
+  font-size: 14px;
+  text-align: right;
+  z-index: 10;
+  background-color: rgba(0,0,0,0.5);
+  padding: 8px 12px;
+  border-radius: 10px;
+}
+
